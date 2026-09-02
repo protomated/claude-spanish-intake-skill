@@ -1,0 +1,16 @@
+{
+  "manifest_version": "0.2",
+  "name": "spanish-intake-skill",
+  "display_name": "Spanish Intake Skill for Law Firms",
+  "version": "1.0.0",
+  "description": "One skill: /spanish-intake. Conducts bilingual (English/Spanish) client intake and communication: turns Spanish-language intake notes or a voicemail transcript into a structured English intake summary for the file, and turns an English draft communication into a natural Spanish version — flagging any ambiguous translation for the attorney's confirmation rather than guessing.",
+  "author": {
+    "name": "Protomated",
+    "url": "https://protomated.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/protomated/claude-spanish-intake-skill"
+  },
+  "license": "Apache-2.0"
+}

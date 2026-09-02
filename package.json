@@ -1,0 +1,15 @@
+{
+  "name": "spanish-intake-skill",
+  "version": "1.0.0",
+  "description": "Spanish Intake Skill — Claude Desktop plugin. Conducts bilingual (English/Spanish) client intake and communication: turns Spanish-language intake notes or a voicemail transcript into a structured English intake summary for the file, and turns an English draft communication into a natural Spanish version — flagging any ambiguous translation for the attorney's confirmation rather than guessing.",
+  "private": true,
+  "scripts": {
+    "validate": "node scripts/validate-plugin.mjs plugin",
+    "pack": "rm -f /tmp/spanish-intake-skill.zip && (cd plugin && zip -r /tmp/spanish-intake-skill.zip . -x '*.DS_Store' 'node_modules/*' '*/node_modules/*' 'package-lock.json') && mv /tmp/spanish-intake-skill.zip ./spanish-intake-skill-v$npm_package_version.zip",
+    "checksum": "sha256sum spanish-intake-skill-v$npm_package_version.zip | tee spanish-intake-skill-v$npm_package_version.zip.sha256",
+    "build": "npm run validate && npm run pack && npm run checksum",
+    "release": "npm run build && gh release create v$npm_package_version spanish-intake-skill-v$npm_package_version.zip spanish-intake-skill-v$npm_package_version.zip.sha256 --title \"v$npm_package_version\" --notes-file RELEASE.md",
+    "clean": "rm -f ./*.zip ./*.zip.sha256",
+    "tree": "find plugin -type f -not -path '*/node_modules/*' | sort"
+  }
+}
