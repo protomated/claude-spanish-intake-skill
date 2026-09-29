@@ -2,6 +2,9 @@
 name: spanish-intake
 description: Bilingual (English/Spanish) client intake and communication. Turns Spanish-language intake notes or a voicemail transcript into a structured English intake summary for the file, or turns an English draft communication into a natural Spanish version — flagging any ambiguous translation for the attorney's (or certified interpreter's) confirmation rather than guessing. Use for Spanish-speaking clients when you need the file in English or a client-facing draft in Spanish.
 argument-hint: "[paste Spanish intake notes or an English draft] — or attach a file"
+last_verified: 2026-09-29
+freshness_window: 12 months
+freshness_category: stylistic
 ---
 
 # /spanish-intake — Spanish-Language Intake & Client Communication
