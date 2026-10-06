@@ -1,6 +1,6 @@
-# Spanish Intake Skill v1.0.1
+# Spanish Intake Skill
 
-Adds Legal Builder Hub freshness frontmatter (`freshness_category: stylistic`). No functional changes.
+Confirmed working in ChatGPT Desktop in addition to Claude Desktop. Removed the hardcoded "(Claude Desktop)" wording from the skill's own output footer.
 
 ## What's included
 
